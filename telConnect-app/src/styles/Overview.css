@@ -1,0 +1,105 @@
+/* src/styles/PlanForm.css */
+
+/* Global background color */
+body {
+  background-color: #f8f9fa; /* Light grey background for the whole page */
+}
+
+.Active-chart-title {
+  padding-left: 50px;
+}
+
+.plan-form-container {
+  background-color: #ffffff; /* White background for the form container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #e0e0e0; /* Light grey border for definition */
+}
+
+.plan-form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.plan-form-group label {
+  flex: 0 0 180px; /* Adjust width for better alignment */
+  text-align: right;
+  margin-right: 15px;
+  font-weight: 500;
+  color: #365486; /* Navy blue for labels */
+}
+
+.plan-form-group input,
+.plan-form-group select,
+.plan-form-group textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #7fc7d9; /* Sea blue border for inputs */
+  border-radius: 4px;
+  font-size: 16px; /* Slightly larger text for readability */
+}
+
+.plan-form-group input:focus,
+.plan-form-group select:focus,
+.plan-form-group textarea:focus {
+  border-color: #365486; /* Navy blue for focus */
+  outline: none; /* Remove default outline */
+}
+
+.button-group {
+  margin-top: 20px; /* Increased space above the buttons */
+  text-align: right; /* Align buttons to the right */
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #365486; /* Navy blue for buttons */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px; /* Gap between buttons */
+}
+
+.button-group button:first-child {
+  margin-left: 0; /* Remove left margin for the first button */
+}
+
+.button-group button:hover {
+  background-color: #2a3a6a; /* Slightly darker shade on hover */
+}
+
+.submitted-info {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0; /* Light grey border for the submitted info */
+  background-color: #dcf2f1; /* Almost white-ish background for the submitted info */
+  border-radius: 4px;
+}
+
+.submitted-info-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.submitted-info-label {
+  flex: 0 0 180px; /* Adjust width for better alignment */
+  font-weight: 500;
+  color: #365486; /* Navy blue for labels */
+}
+
+.submitted-info-value {
+  flex: 1;
+  color: #0f1035; /* Dark blue for values */
+}
+
+.error-message {
+  color: #dc3545; /* Red for errors */
+  margin-top: 10px;
+  font-size: 14px; /* Slightly smaller font size for errors */
+}

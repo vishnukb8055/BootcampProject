@@ -1,0 +1,84 @@
+.navbar-container {
+  width: 100%;
+}
+
+.navbar-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.navbar-upper-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.navbar-lower {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Not sticky until scrolled */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-lower-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 80px;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 14px;
+  max-width: 220px;
+  background: #fff;
+  position: relative;
+}
+
+.search-box input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 14px;
+  width: calc(100% - 30px);
+}
+
+.search-box img {
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.search-login {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.loginicon {
+  cursor: pointer;
+}

@@ -1,0 +1,222 @@
+.available-services-container {
+    padding: 20px;
+    text-align: left;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+}
+.available-services-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #365486; /* Navy Blue */
+    padding-bottom: 25px;
+}
+
+
+.headline {
+    color: #365486; /* Navy blue color */
+    font-size: 24px; /* Slightly larger font for headline */
+}
+
+.service-select {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.service-select label {
+    margin-right: 10px;
+    font-size: 14px; /* Make label text a bit larger */
+}
+
+.service-select select {
+    padding: 5px;
+    font-size: 14px; /* Increased font size */
+    width: 180px; /* Increased width for better readability */
+    height: 35px; /* Slightly taller */
+    border-radius: 5px; /* Rounded edges for a more modern look */
+    border: 1px solid #ccc;
+}
+
+.plans-table-container {
+    flex: 1; /* Fills the available space */
+    overflow-y: auto; /* Enable scrolling if the table is too long */
+}
+
+.service-plans-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure consistent column widths */
+}
+
+.service-plans-table th, .service-plans-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service-plans-table th {
+    background-color: #DCF2F1;
+    color: #0F1035;
+    font-weight: bold;
+}
+
+.service-plans-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.service-plans-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.edit-button {
+    background-color: #365486;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #2c3e70; /* Darker on hover */
+}
+
+.edit-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-dialog {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%; /* Make it responsive */
+}
+
+.edit-dialog h3 {
+    margin-top: 0;
+    font-size: 20px; /* Bigger dialog title */
+}
+
+.edit-dialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-dialog label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-dialog input {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.save-button, .cancel-button {
+    padding: 10px 20px; /* Increase padding for better touch target */
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268; /* Darker on hover */
+}
+
+.custom-save-button {
+    background-color: #1E2A5A;
+    border-color: #1E2A5A;
+  }
+  
+  .custom-save-button:hover {
+    background-color: #172140;
+    border-color: #172140;
+  }
+  
+  /* Cancel Button Styling */
+  .custom-cancel-button {
+    background-color: #6c757d; /* Default secondary button background color */
+    border-color: #6c757d; /* Default secondary button border color */
+    color: #ffffff; /* Text color */
+  }
+  
+  .custom-cancel-button:hover {
+    background-color: #5a6268; /* Darker shade for hover effect */
+    border-color: #545b62; /* Darker border color on hover */
+  }
+
+  .headline {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #365486; /* Navy Blue */
+    font-size: large;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .edit-dialog {
+        width: 90%;
+    }
+
+    .plans-table th, .plans-table td {
+        padding: 6px; /* Reduce padding for smaller screens */
+        font-size: 12px;
+    }
+
+    .edit-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .service-select select {
+        width: 150px;
+        font-size: 12px;
+    }
+}

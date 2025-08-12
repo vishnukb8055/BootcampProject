@@ -1,0 +1,106 @@
+/* Modal Content Styling */
+.edit-profile-modal .modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Modal Header Styling */
+.edit-profile-modal .modal-header {
+  background: linear-gradient(135deg, #365486, #1E2A5A);
+  border-bottom: 1px solid #dee2e6;
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.edit-profile-modal .modal-header .btn-close {
+  filter: invert(1); /* Makes the close button white */
+}
+
+/* Modal Body Styling */
+.edit-profile-modal .modal-body {
+  padding: 2rem;
+}
+
+/* Modal Footer Styling */
+.edit-profile-modal .modal-footer {
+  background: linear-gradient(135deg, #365486, #1E2A5A);
+  border-top: 1px solid #dee2e6;
+}
+
+/* Form Control Disabled Styling */
+.form-control-disabled {
+  background-color: #e9ecef;
+  color: #495057;
+  cursor: not-allowed;
+}
+
+/* Change Password Section Styling */
+.change-password-section {
+  text-align: right;
+}
+
+.password-modal .modal-header {
+  background: linear-gradient(135deg, #365486, #1E2A5A);
+  border-bottom: 1px solid #dee2e6;
+  color: #ffffff; /* Ensure text color is white */
+}
+
+.password-modal .modal-header .btn-close {
+  filter: invert(1); /* Makes the close button white */
+}
+
+.password-modal .modal-footer {
+  background: linear-gradient(135deg, #365486, #1E2A5A);
+  border-top: 1px solid #dee2e6;
+}
+
+.change-password-section .btn-link {
+  color: #1E2A5A;
+  font-weight: 500;
+}
+
+/* Save Button Styling */
+.custom-save-button {
+  background-color: #1E2A5A;
+  border-color: #1E2A5A;
+}
+
+.custom-save-button:hover {
+  background-color: #172140;
+  border-color: #172140;
+}
+
+/* Cancel Button Styling */
+.custom-cancel-button {
+  background-color: #6c757d; /* Default secondary button background color */
+  border-color: #6c757d; /* Default secondary button border color */
+  color: #ffffff; /* Text color */
+}
+
+.custom-cancel-button:hover {
+  background-color: #5a6268; /* Darker shade for hover effect */
+  border-color: #545b62; /* Darker border color on hover */
+}
+
+/* Modal Title Styling */
+.modal-title-white {
+  color: #ffffff; /* Ensure title color is white */
+}
+.password-input-group {
+  display: flex;
+  align-items: center;
+}
+
+.password-input-group .form-control {
+  flex: 1;
+}
+
+.password-input-group .btn {
+  margin-left: 8px;
+}

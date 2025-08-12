@@ -1,0 +1,113 @@
+.page-format {
+  background-color: #afe7e4;
+  padding: 20px;
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  min-width: 300px;
+  box-sizing: border-box;
+  margin: 40px auto;
+}
+
+.heading {
+  font-weight: bold;
+  color: #1E2A5A;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 1.4;
+}
+
+.required-asterisk {
+  color: red;
+  font-size: 1.2em;
+}
+
+.personal-info-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #6c757d;
+  font-size: 1.1em;
+}
+
+.form-input, .date-input {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0f1035;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.phone-group {
+  position: relative;
+  width: 100%;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+}
+
+.phone-prefix {
+  background: #1E2A5A;
+  color: #ffffff;
+  padding: 0 12px;
+  border-radius: 6px 0 0 6px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-input {
+  border-radius: 0 6px 6px 0;
+  padding-left: 12px;
+  height: 45px;
+  flex: 1;
+  font-size: 1em;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  background-color: #1E2A5A;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #0c0e2a;
+}

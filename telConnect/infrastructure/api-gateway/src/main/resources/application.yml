@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: api-gateway
+
+  profiles:
+    active: dev
+  label: main
+
+  config:
+    import: configserver:http://localhost:8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

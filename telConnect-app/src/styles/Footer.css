@@ -1,0 +1,25 @@
+.footer {
+  background-color: #f1f1f1; /* Very light grey background */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #1e2a5a; /* Dark blue color for links */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  color: #1e2a5a; /* Dark blue color for text */
+  margin: 0;
+}

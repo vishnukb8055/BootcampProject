@@ -1,0 +1,132 @@
+.service-plans-container {
+  background: #afe7e4;
+  padding: 40px 20px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.headline {
+  font-size: 2em;
+  color: #365486;
+  margin-bottom: 40px;
+}
+
+.service-select-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.service-button {
+  padding: 12px 24px;
+  margin: 0 15px;
+  cursor: pointer;
+  border: 1px solid #1E2A5A;
+  background-color: #fff;
+  color: #365486;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.plans-box {
+  background-color: #afe7e4;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Make cards larger and more spaced */
+  gap: 40px; /* Increase spacing between cards */
+  padding: 20px;
+}
+
+.plan-box {
+  background: #1E2A5A; 
+  border-radius: 20px; /* Larger border-radius for smoother edges */
+  padding: 30px; /* More padding inside each card */
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #7FC7D9; /* Thicker left border for more emphasis */
+}
+
+.plan-box:hover {
+  transform: translateY(-7px); /* More noticeable hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.plan-box h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px; /* More spacing under title */
+}
+
+.plan-box p {
+  margin: 15px 0;
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.plan-box .price-section, .plan-box .duration-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Larger space between content and sections */
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.plan-box .price-section svg, .plan-box .duration-section svg  {
+  margin-right: 12px;
+  color: #7FC7D9;
+}
+
+.plan-box .divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0; /* Increased spacing for better separation */
+}
+
+.activate-button {
+  margin-top: 30px;
+  padding: 12px 30px; /* Larger button with more padding */
+  background-color: #1E2A5A;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.activate-button:hover {
+  background-color: #0F1035;
+}
+
+.service-button.active {
+  background-color: #0F1035; /* Dark blue from your theme */
+  color: white; 
+  border: 2px solid #365486; /* Navy blue for a darker highlight */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transform: scale(1.05); /* Slightly increase size to stand out */
+}
+
+.service-button:hover {
+  background-color: #0F1035;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.plan-box.selected {
+  background-color: #0F1035; /* Dark blue background for selected plan */
+  color: #fff;
+  border-left: 8px solid #365486; /* Thicker, darker navy-blue border */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3); /* Add more shadow to selected plan */
+  transform: scale(1.03); /* Slightly scale the selected box */
+}
+

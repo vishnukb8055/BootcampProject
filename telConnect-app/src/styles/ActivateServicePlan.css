@@ -1,0 +1,61 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #365486; /* Navy Blue */
+    padding-bottom: 25px;
+}
+
+.plans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.plans-table th, .plans-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.plans-table th {
+    background-color: #DCF2F1;
+    color: #0F1035;
+    font-weight: bold;
+}
+
+.plans-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.plans-table tr:hover {
+    background-color: #e1e1e1; /* Light grey for hover effect */
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+.activate-button {
+    background-color: #365486; /* Sea blue */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.activate-button:hover {
+    background-color: #365486; /* Navy Blue on hover */
+}

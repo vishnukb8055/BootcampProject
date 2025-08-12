@@ -1,0 +1,124 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.image-section {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  padding-right: 4rem;
+  padding-bottom: 150px
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  padding: 2rem;
+  background-color: #f0f0f0;
+  padding-bottom: 200px;
+  padding-right: 7%;
+}
+
+.register-section h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem; /* Increased spacing below the heading */
+  text-align: center;
+  font-size: 2rem;
+}
+
+.register-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+.register-section form div {
+  margin-bottom: 1rem; /* Reduced margin for better spacing between fields */
+  width: 100%;
+  max-width: 400px; /* Ensure consistent width */
+}
+
+.register-section input[type="email"],
+.register-section input[type="text"],
+.register-section input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem; /* Adjusted font size for consistency */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.register-section .verify-button,
+.register-section button {
+  padding: 0.75rem 1.5rem; /* Increased padding for better button appearance */
+  background-color: #1e2a5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-section .send-otp-button {
+  background-color: #1e2a5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem; /*Adjusted spacing below the button*/
+}
+
+.register-section .send-otp-button:hover,
+.register-section .verify-button:hover,
+.register-section button:hover {
+  background-color: #0f1a3a; /* Slightly darker for hover effect */
+}
+
+.msg {
+  color: red;
+  margin-bottom: 5%;
+  font-size: 1rem;
+}
+
+.register-section p {
+  /* margin-top: 1rem; */
+  text-align: center;
+}
+
+.bold-label {
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.register-section a {
+  color: #1e2a5a;
+  text-decoration: none;
+  font-size: 1rem;
+}

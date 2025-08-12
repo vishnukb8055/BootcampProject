@@ -1,0 +1,92 @@
+/* Plan Card Styles */
+.plan-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 10px;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .plan-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .detail-section {
+    text-align: left;
+    color: #555;
+  }
+  
+  .recharge-button {
+    background-color: #1E2A5A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Custom Link Button Style */
+  .custom-link-button {
+    color: #1E2A5A;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .custom-link-button:hover {
+    color: #0d1b42;
+    text-decoration: underline;
+  }
+  
+  .custom-link-button:focus {
+    box-shadow: none;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    border-radius: 15px;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .modal-detail {
+    margin-bottom: 15px;
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #ddd;
+  }
+  
+  .modal-footer .recharge-button {
+    background-color: #1E2A5A;
+    color: white;
+  }
+  
